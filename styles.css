@@ -1,12 +1,20 @@
 body{
+    background: black;
+    
     display: flex;
     justify-content: center;
     align-items: center; 
     height: 100vh; 
-    margin: 0; 
+    margin: 0;
+    
 }
 
-.princial{
+* {
+    border: 1px dashed red;
+    min-height: 10px;
+}
+
+.postcard-header{
     display: flex;
     width: 680px;
     height: 140px;
@@ -17,11 +25,13 @@ body{
     margin-left: 15px;
 }
 
-.contenedor_presentacion{
+.postcard{
     /*display: flex;*/
+    background: white;
     width: 700px;
     height: 600px;
     border: 3px;
+    margin: auto;
     border-style: dashed;
     border-color: black;
 }
@@ -50,7 +60,7 @@ body{
     align-items: center;
 }
 
-.cuerpo{
+.postcard-body{
     display: flex;
     width: 670px;
     height: 230px;
@@ -81,7 +91,7 @@ body{
     margin-left: 10px;
 }
 
-.finish{
+.postcard-footer{
     display: flex;
     width: 670px;
     height: 120px;
@@ -91,4 +101,8 @@ body{
     margin-top: 25px;
     margin-left: 15px;
     justify-content: center;
+}
+
+p{
+    color:blue;
 }
